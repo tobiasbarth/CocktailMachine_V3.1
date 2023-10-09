@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.app.cocktailmachine.ui.main.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/home_fragment" />
+
+    <fragment
+        android:id="@+id/nav_all_cocktails"
+        android:name="com.app.cocktailmachine.ui.main.AllCocktailsFragment"
+        android:label="@string/menu_all_cocktails"
+        tools:layout="@layout/all_cocktails_fragment" />
+
+    <fragment
+        android:id="@+id/nav_categories"
+        android:name="com.app.cocktailmachine.ui.main.CategoriesFragment"
+        android:label="@string/menu_categories"
+        tools:layout="@layout/categories_fragment" />
+
+    <fragment
+        android:id="@+id/nav_search"
+        android:name="com.app.cocktailmachine.ui.main.SearchNameFragment"
+        android:label="@string/menu_search"
+        tools:layout="@layout/search_name_fragment" />
+    <fragment
+        android:id="@+id/nav_test"
+        android:name="com.app.cocktailmachine.ui.main.TestFragment"
+        android:label="@string/menu_test"
+        tools:layout="@layout/test_fragment" />
+    <fragment
+        android:id="@+id/nav_stats"
+        android:name="com.app.cocktailmachine.ui.main.StatsFragment"
+        android:label="@string/menu_stats"
+        tools:layout="@layout/stats_fragment" />
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.app.cocktailmachine.ui.main.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/settings_activity" />
+
+</navigation>

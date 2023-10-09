@@ -1,0 +1,1348 @@
+// MAXIMAL 10 Ingredients da Ansicht derzeit nicht mehr kann
+
+{
+  "cocktails": [
+    {
+      "name": "Banana Boat",
+      "category": "Creamy",
+      "image": "banana_boat.png",
+      "ingredients": [
+        {
+          "grocery": "Wodka",
+          "amount": 33
+        },
+        {
+          "grocery": "Sahne",
+          "amount": 25
+        },
+        {
+          "grocery": "Maracujasaft",
+          "amount": 44
+        },
+        {
+          "grocery": "Ananassaft",
+          "amount": 33
+        }, {
+          "grocery": "Bananensaft",
+          "amount:": 100
+        }
+        // TODO: Bananensaftmenge ???
+      ]
+    },
+    {
+      "name": "Banana Flip",
+      "category": "Creamy",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Weißer Rum",
+          "amount": 80
+        },
+        {
+          "grocery": "Sahne",
+          "amount": 45
+        },
+        {
+          "grocery": "Grenadinensirup",
+          "amount": 45
+        }, {
+          "grocery": "Bananensaft",
+          "amount:": 150
+        }
+        // TODO: Bananensaftmenge ???
+      ]
+    },
+    {
+      "name": "Blue Hawaii",
+      "category": "Creamy",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Weißer Rum",
+          "amount": 67
+        },
+        {
+          "grocery": "Orangenlikör",
+          "amount": 67
+        },
+        {
+          "grocery": "Sahne",
+          "amount": 67
+        },
+        {
+          "grocery": "Blue Curacao",
+          "amount": 67
+        }
+      ]
+    },
+    {
+      "name": "Cracy Daisy",
+      "category": "Creamy",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Wodka",
+          "amount": 100
+        },
+        {
+          "grocery": "Sahne",
+          "amount": 40
+        },
+        {
+          "grocery": "Maracujasaft",
+          "amount": 110
+        }
+      ]
+    },
+    {
+      "name": "Golden Cream",
+      "category": "Creamy",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Weißer Rum",
+          "amount": 68
+        },
+        {
+          "grocery": "Orangenlikör",
+          "amount": 33
+        },
+        {
+          "grocery": "Sahne",
+          "amount": "33"
+        },
+        {
+          "grocery": "Orangensaft",
+          "amount": 77
+        }
+      ]
+    },
+    {
+      "name": "Haubentaucher",
+      "category": "Creamy",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Kokos Rum",
+          "amount": 68
+        },
+        {
+          "grocery": "Wodka",
+          "amount": 60
+        },
+        {
+          "grocery": "Mandelsirup",
+          "amount": 26
+        },
+        {
+          "grocery": "Maracujasaft",
+          "amount": 63
+        },
+        {
+          "grocery": "Sahne",
+          "amount": 20
+        },
+        {
+          "grocery": "Grenadinensirup",
+          "amount": 40
+        }
+      ]
+    },
+    {
+      "name": "Pina Colada",
+      "category": "Creamy",
+      "image": "pina_colada.png",
+      "ingredients": [
+        {
+          "grocery": "Weißer Rum",
+          "amount": 61
+        },
+        {
+          "grocery": "Ananassaft",
+          "amount": 60
+        },
+        {
+          "grocery": "Sahne",
+          "amount": 61
+        },
+        {
+          "grocery": "Kokossirup",
+          "amount": 30
+        }
+      ]
+    },
+    {
+      "name": "Snowwhite",
+      "category": "Creamy",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Kokos Rum",
+          "amount": 68
+        },
+        {
+          "grocery": "Sahne",
+          "amount": 33
+        },
+        {
+          "grocery": "Zitronensaft",
+          "amount": 17
+        },
+        {
+          "grocery": "Ananassaft",
+          "amount": 66
+        },
+        {
+          "grocery": "Kokossirup",
+          "amount": 33
+        }
+      ]
+    },
+    {
+      "name": "Swimmingpool",
+      "category": "Creamy",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Weißer Rum",
+          "amount": 30
+        },
+        {
+          "grocery": "Wodka",
+          "amount": 30
+        },
+        {
+          "grocery": "Blue Curacao",
+          "amount": 62
+        },
+        {
+          "grocery": "Sahne",
+          "amount": 25
+        },
+        {
+          "grocery": "Ananassaft",
+          "amount": 35
+        },
+        {
+          "grocery": "Kokossirup",
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "name": "Blue Arrow",
+      "category": "Fresh",
+      "image": "blue_arrow.png",
+      "ingredients": [
+        {
+          "grocery": "Gin",
+          "amount": 80
+        },
+        {
+          "grocery": "Orangenlikör",
+          "amount": 61
+        },
+        {
+          "grocery": "Blue Curacao",
+          "amount": 60
+        },
+        {
+          "grocery": "Zitronensaft",
+          "amount": 46
+        }
+      ]
+    },
+    {
+      "name": "Blue Bird",
+      "category": "Fresh",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Gin",
+          "amount": 120
+        },
+        {
+          "grocery": "Blue Curacao",
+          "amount": 120
+        },
+        {
+          "grocery": "Zitronensaft",
+          "amount": 70
+        },
+        {
+          "grocery": "Mandelsirup",
+          "amount": 90
+        }
+      ]
+    },
+    {
+      "name": "Blue Margarita",
+      "category": "Fresh",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Tequila",
+          "amount": 120
+        },
+        {
+          "grocery": "Orangenlikör",
+          "amount": 90
+        },
+        {
+          "grocery": "Zitronensaft",
+          "amount": 70
+        },
+        {
+          "grocery": "Blue Curacao",
+          "amount": 90
+        }
+      ]
+    },
+    {
+      "name": "Huntsman",
+      "category": "Fresh",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Gin",
+          "amount": 100
+        },
+        {
+          "grocery": "Orangensaft",
+          "amount": 100
+        },
+        {
+          "grocery": "Mandelsirup",
+          "amount": 30
+        },
+        {
+          "grocery": "Zitronensaft",
+          "amount": 25
+        }
+      ]
+    },
+    {
+      "name": "Margarita",
+      "category": "Fresh",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Tequila",
+          "amount": 120
+        },
+        {
+          "grocery": "Orangenlikör",
+          "amount": 60
+        },
+        {
+          "grocery": "Zitronensaft",
+          "amount": 60
+        }
+      ]
+    },
+    {
+      "name": "Pink Lady",
+      "category": "Fresh",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Gin",
+          "amount": 90
+        },
+        {
+          "grocery": "Zitronensaft",
+          "amount": 60
+        },
+        {
+          "grocery": "Grenadinensirup",
+          "amount": 60
+        },
+        {
+          "grocery": "Brandy",
+          "amount": 60
+        }
+      ]
+    },
+    {
+      "name": "White Lady",
+      "category": "Fresh",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Gin",
+          "amount": 120
+        },
+        {
+          "grocery": "Orangenlikör",
+          "amount": 60
+        },
+        {
+          "grocery": "Zitronensaft",
+          "amount": 60
+        }
+      ]
+    },
+    {
+      "name": "Winter Chill",
+      "category": "Fresh",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Wodka",
+          "amount": 100
+        },
+        {
+          "grocery": "Blue Curacao",
+          "amount": 80
+        },
+        {
+          "grocery": "Zitronensaft",
+          "amount": 60
+        },
+        {
+          "grocery": "Orangenlikör",
+          "amount": 60
+        }
+      ]
+    },
+    {
+      "name": "Ananas Fizz",
+      "category": "Fruity",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Weißer Rum",
+          "amount": 76
+        },
+        {
+          "grocery": "Zitronensaft",
+          "amount": 30
+        },
+        {
+          "grocery": "Ananassaft",
+          "amount": 80
+        }
+      ]
+    },
+    {
+      "name": "Ananas Orangen Daiquiri",
+      "category": "Fruity",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Weißer Rum",
+          "amount": 76
+        },
+        {
+          "grocery": "Tequila",
+          "amount": 75
+        },
+        {
+          "grocery": "Zitronensaft",
+          "amount": 58
+        },
+        {
+          "grocery": "Orangensaft",
+          "amount": 38
+        },
+        {
+          "grocery": "Grenadinensirup",
+          "amount": 38
+        }
+      ]
+    },
+    {
+      "name": "Bagira",
+      "category": "Fruity",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Wodka",
+          "amount": 67
+        },
+        {
+          "grocery": "Maracujasaft",
+          "amount": 88
+        },
+        {
+          "grocery": "Grenadinensirup",
+          "amount": 26
+        },
+        {
+          "grocery": "Kokossirup",
+          "amount": 26
+        }
+      ]
+    },
+    {
+      "name": "Bahama Mama",
+      "category": "Fruity",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Brauner Rum",
+          "amount": 75
+        },
+        {
+          "grocery": "Zitronensaft",
+          "amount": 35
+        },
+        {
+          "grocery": "Ananassaft",
+          "amount": 45
+        },
+        {
+          "grocery": "Kokossirup",
+          "amount": 35
+        },
+        {
+          "grocery": "Bananensaft",
+          "amount": 25
+        }
+      ]
+    },
+    {
+      "name": "Blood Orange",
+      "category": "Fruity",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Wodka",
+          "amount": 67
+        },
+        {
+          "grocery": "Orangenlikör",
+          "amount": 50
+        },
+        {
+          "grocery": "Orangensaft",
+          "amount": 88
+        }
+      ]
+    },
+    {
+      "name": "Bloody Screwdriver",
+      "category": "Fruity",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Wodka",
+          "amount": 84
+        },
+        {
+          "grocery": "Orangensaft",
+          "amount": 88
+        },
+        {
+          "grocery": "Grenadinensirup",
+          "amount": 33
+        }
+      ]
+    },
+    {
+      "name": "Cosmopolitan",
+      "category": "Fruity",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Wodka",
+          "amount": 60
+        },
+        {
+          "grocery": "Orangenlikör",
+          "amount": 50
+        },
+        {
+          "grocery": "Zitronensaft",
+          "amount": 120
+        },
+        {
+          "grocery": "Grenadinensirup",
+          "amount": 120
+        }
+      ]
+    },
+    {
+      "name": "Höhenrausch",
+      "category": "Fruity",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Weißer Rum",
+          "amount": 67
+        },
+        {
+          "grocery": "Blue Curacao",
+          "amount": 45
+        },
+        {
+          "grocery": "Zitronensaft",
+          "amount": 17
+        },
+        {
+          "grocery": "Ananassaft",
+          "amount": 77
+        },
+        {
+          "grocery": "Kokossirup",
+          "amount": 17
+        }
+      ]
+    },
+    {
+      "name": "Hurricane",
+      "category": "Fruity",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Weißer Rum",
+          "amount": 50
+        },
+        {
+          "grocery": "Brauner Rum",
+          "amount": 44
+        },
+        {
+          "grocery": "Zitronensaft",
+          "amount": 33
+        },
+        {
+          "grocery": "Grenadinensirup",
+          "amount": 33
+        },
+        {
+          "grocery": "Orangensaft",
+          "amount": 66
+        }
+      ]
+    },
+    {
+      "name": "Malibu Sunrise",
+      "category": "Fruity",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Kokos Rum",
+          "amount": 80
+        },
+        {
+          "grocery": "Zitronensaft",
+          "amount": 20
+        },
+        {
+          "grocery": "Orangensaft",
+          "amount": 80
+        },
+        {
+          "grocery": "Grenadinensirup",
+          "amount": 40
+        }
+      ]
+    },
+    {
+      "name": "Mexican Sunrise",
+      "category": "Fruity",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Tequila",
+          "amount": 80
+        },
+        {
+          "grocery": "Orangenlikör",
+          "amount": 50
+        },
+        {
+          "grocery": "Orangensaft",
+          "amount": 80
+        },
+        {
+          "grocery": "Zitronensaft",
+          "amount": 30
+        },
+        {
+          "grocery": "Mandelsirup",
+          "amount": 40
+        }
+      ]
+    },
+    {
+      "name": "Orange Splash",
+      "category": "Fruity",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Wodka",
+          "amount": 80
+        },
+        {
+          "grocery": "Orangenlikör",
+          "amount": 40
+        },
+        {
+          "grocery": "Orangensaft",
+          "amount": 95
+        }
+      ]
+    },
+    {
+      "name": "Sex Machine",
+      "category": "Fruity",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Tequila",
+          "amount": 90
+        },
+        {
+          "grocery": "Orangensaft",
+          "amount": 45
+        },
+        {
+          "grocery": "Orangenlikör",
+          "amount": 35
+        },
+        {
+          "grocery": "Mandelsirup",
+          "amount": 23
+        },
+        {
+          "grocery": "Ananassaft",
+          "amount": 45
+        }
+      ]
+    },
+    {
+      "name": "Sex On The Beach",
+      "category": "Fruity",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Wodka",
+          "amount": 65
+        },
+        {
+          "grocery": "Zitronensaft",
+          "amount": 16
+        },
+        {
+          "grocery": "Grenadinensirup",
+          "amount": 16
+        },
+        {
+          "grocery": "Orangensaft",
+          "amount": 43
+        },
+        {
+          "grocery": "Ananassaft",
+          "amount": 43
+        },
+        {
+          "grocery": "Orangenlikör",
+          "amount": 16
+        }
+      ]
+    },
+    {
+      "name": "Slalom",
+      "category": "Fruity",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Brauner Rum",
+          "amount": 105
+        },
+        {
+          "grocery": "Zitronensaft",
+          "amount": 26
+        },
+        {
+          "grocery": "Mandelsirup",
+          "amount": 35
+        },
+        {
+          "grocery": "Orangensaft",
+          "amount": 85
+        }
+      ]
+    },
+    {
+      "name": "Solero",
+      "category": "Fruity",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Weißer Rum",
+          "amount": 53
+        },
+        {
+          "grocery": "Maracujasaft",
+          "amount": 57
+        },
+        {
+          "grocery": "Orangensaft",
+          "amount": 57
+        },
+        {
+          "grocery": "Zitronensaft",
+          "amount": 17
+        },
+        {
+          "grocery": "Mandelsirup",
+          "amount": 24
+        }
+      ]
+    },
+    {
+      "name": "Tequila Sunrise",
+      "category": "Fruity",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Tequila",
+          "amount": 88
+        },
+        {
+          "grocery": "Orangensaft",
+          "amount": 99
+        },
+        {
+          "grocery": "Grenadinensirup",
+          "amount": 33
+        }
+      ]
+    },
+    {
+      "name": "Touch Down",
+      "category": "Fruity",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Wodka",
+          "amount": 90
+        },
+        {
+          "grocery": "Grenadinensirup",
+          "amount": 22
+        },
+        {
+          "grocery": "Zitronensaft",
+          "amount": 45
+        },
+        {
+          "grocery": "Maracujasaft",
+          "amount": 60
+        },
+        {
+          "grocery": "Brandy",
+          "amount": 40
+        }
+      ]
+    },
+    {
+      "name": "Cala Serena",
+      "category": "Alkoholfrei",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Sahne",
+          "amount": 18
+        },
+        {
+          "grocery": "Ananassaft",
+          "amount": 46
+        },
+        {
+          "grocery": "Orangensaft",
+          "amount": 46
+        },
+        {
+          "grocery": "Maracujasaft",
+          "amount": 57
+        },
+        {
+          "grocery": "Kokossirup",
+          "amount": 18
+        }
+      ]
+    },
+    {
+      "name": "Cinderella",
+      "category": "Alkoholfrei",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Sahne",
+          "amount": 18
+        },
+        {
+          "grocery": "Grenadinensirup",
+          "amount": 16
+        },
+        {
+          "grocery": "Orangensaft",
+          "amount": 663
+        },
+        {
+          "grocery": "Ananassaft",
+          "amount": 52
+        },
+        {
+          "grocery": "Kokossirup",
+          "amount": 32
+        }
+      ]
+    },
+    {
+      "name": "Coconut Kiss",
+      "category": "Alkoholfrei",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Sahne",
+          "amount": 30
+        },
+        {
+          "grocery": "Ananassaft",
+          "amount": 100
+        },
+        {
+          "grocery": "Grenadinensirup",
+          "amount": 15
+        },
+        {
+          "grocery": "Kokossirup",
+          "amount": 30
+        }
+      ]
+    },
+    {
+      "name": "Exotic Dream",
+      "category": "Alkoholfrei",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Orangensaft",
+          "amount": 60
+        },
+        {
+          "grocery": "Ananassaft",
+          "amount": 60
+        },
+        {
+          "grocery": "Sahne",
+          "amount": 22
+        },
+        {
+          "grocery": "Kokossirup",
+          "amount": 23
+        }
+      ]
+    },
+    {
+      "name": "Lion King",
+      "category": "Alkoholfrei",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Orangensaft",
+          "amount": 50
+        },
+        {
+          "grocery": "Grenadinensirup",
+          "amount": 25
+        },
+        {
+          "grocery": "Mandelsirup",
+          "amount": 33
+        },
+        {
+          "grocery": "Maracujasaft",
+          "amount": 66
+        },
+        {
+          "grocery": "Sahne",
+          "amount": 25
+        }
+      ]
+    },
+    {
+      "name": "Orange Velvet",
+      "category": "Alkoholfrei",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Orangensaft",
+          "amount": 67
+        },
+        {
+          "grocery": "Maracujasaft",
+          "amount": 67
+        },
+        {
+          "grocery": "Mandelsirup",
+          "amount": 34
+        },
+        {
+          "grocery": "Sahne",
+          "amount": 25
+        }
+      ]
+    },
+    {
+      "name": "San Francisco",
+      "category": "Alkoholfrei",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Grenadinensirup",
+          "amount": 24
+        },
+        {
+          "grocery": "Zitronensaft",
+          "amount": 24
+        },
+        {
+          "grocery": "Orangensaft",
+          "amount": 43
+        },
+        {
+          "grocery": "Maracujasaft",
+          "amount": 43
+        },
+        {
+          "grocery": "Ananassaft",
+          "amount": 43
+        }
+      ]
+    },
+    /*
+    {
+      "name": "Snoopy",
+      "category": "Alkoholfrei",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Mandelsirup",
+          "amount": 45
+        },
+        {
+          "grocery": "Zitronensaft",
+          "amount": 34
+        },
+        {
+          "grocery": "Blue Curacao",
+          "amount": 45
+        },
+        {
+          "grocery": "Maracujasaft",
+          "amount": 57
+        },
+        {
+          "grocery": "Kokossirup",
+          "amount": 18
+        }
+      ]
+    }
+    */
+    {
+      "name": "Sommernachtstraum",
+      "category": "Alkoholfrei",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Orangensaft",
+          "amount": 66
+        },
+        {
+          "grocery": "Maracujasaft",
+          "amount": 66
+        },
+        {
+          "grocery": "Mandelsirup",
+          "amount": 33
+        },
+        {
+          "grocery": "Sahne",
+          "amount": 25
+        }
+      ]
+    },
+    {
+      "name": "Sunrise",
+      "category": "Alkoholfrei",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Orangensaft",
+          "amount": 84
+        },
+        {
+          "grocery": "Grenadinensirup",
+          "amount": 34
+        },
+        {
+          "grocery": "Zitronensaft",
+          "amount": 52
+        },
+        {
+          "grocery": "Maracujasaft",
+          "amount": 28
+        }
+      ]
+    },
+    /*
+    {
+      "name": "Sunset",
+      "category": "Alkoholfrei",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Maracujasaft",
+          "amount": 66
+        },
+        {
+          "grocery": "Orangensaft",
+          "amount": 66
+        },
+        {
+          "grocery": "Zitronensaft",
+          "amount": 25
+        },
+        {
+          "grocery": "Blue Curacao",
+          "amount": 33
+        }
+      ]
+    } */
+    {
+      "name": "Crazy Motherfucker",
+      "category": "Strong",
+      "image": "crazy_motherfucker.png",
+      "ingredients": [
+        {
+          "grocery": "Gin",
+          "amount": 52
+        },
+        {
+          "grocery": "Tequila",
+          "amount": 52
+        },
+        {
+          "grocery": "Wodka",
+          "amount": 56
+        },
+        {
+          "grocery": "Blue Curacao",
+          "amount": 52
+        },
+        {
+          "grocery": "Ananassaft",
+          "amount": 80
+        }
+      ]
+    },
+    {
+      "name": "Florida",
+      "category": "Strong",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Wodka",
+          "amount": 80
+        },
+        {
+          "grocery": "Kokos Rum",
+          "amount": 80
+        },
+        {
+          "grocery": "Maracujasaft",
+          "amount": 66
+        },
+        {
+          "grocery": "Grenadinensirup",
+          "amount": 40
+        }
+      ]
+    },
+    {
+      "name": "Long Island Icetea",
+      "category": "Strong",
+      "image": "long_island_icetea.png",
+      "ingredients": [
+        {
+          "grocery": "Wodka",
+          "amount": 38
+        },
+        {
+          "grocery": "Weißer Rum",
+          "amount": 38
+        },
+        {
+          "grocery": "Tequila",
+          "amount": 28
+        },
+        {
+          "grocery": "Orangenlikör",
+          "amount": 38
+        },
+        {
+          "grocery": "Gin",
+          "amount": 28
+        },
+        {
+          "grocery": "Zitronensaft",
+          "amount": 30
+        },
+        {
+          "grocery": "Cola",
+          "amount": 300
+        }
+      ]
+    },
+    {
+      "name": "Mai Coco",
+      "category": "Strong",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Weißer Rum",
+          "amount": 34
+        },
+        {
+          "grocery": "Brauner Rum",
+          "amount": 45
+        },
+        {
+          "grocery": "Orangenlikör",
+          "amount": 34
+        },
+        {
+          "grocery": "Orangensaft",
+          "amount": 34
+        },
+        {
+          "grocery": "Ananassaft",
+          "amount": 28
+        },
+        {
+          "grocery": "Mandelsirup",
+          "amount": 23
+        },
+        {
+          "grocery": "Zitronensaft",
+          "amount": 9
+        },
+        {
+          "grocery": "Sahne",
+          "amount": 17
+        },
+        {
+          "grocery": "Kokossirup",
+          "amount": 17
+        }
+      ]
+    },
+    {
+      "name": "Mai Tai",
+      "category": "Strong",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Brauner Rum",
+          "amount": 90
+        },
+        {
+          "grocery": "Weißer Rum",
+          "amount": 40
+        },
+        {
+          "grocery": "Mandelsirup",
+          "amount": 27
+        },
+        {
+          "grocery": "Ananassaft",
+          "amount": 90
+        },
+        {
+          "grocery": "Zitronensaft",
+          "amount": 20
+        },
+        {
+          "grocery": "Orangenlikör",
+          "amount": 40
+        }
+      ]
+    },
+    {
+      "name": "Planters Punch",
+      "category": "Strong",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Brauner Rum",
+          "amount": 66
+        },
+        {
+          "grocery": "Weißer Rum",
+          "amount": 51
+        },
+        {
+          "grocery": "Orangensaft",
+          "amount": 33
+        },
+        {
+          "grocery": "Ananassaft",
+          "amount": 33
+        },
+        {
+          "grocery": "Grenadinensirup",
+          "amount": 25
+        },
+        {
+          "grocery": "Zitronensaft",
+          "amount": 25
+        }
+      ]
+    },
+    {
+      "name": "Zombie",
+      "category": "Strong",
+      "image": "default.png",
+      "ingredients": [
+        {
+          "grocery": "Weißer Rum",
+          "amount": 42
+        },
+        {
+          "grocery": "Brauner Rum",
+          "amount": 55
+        },
+        {
+          "grocery": "Orangenlikör",
+          "amount": 25
+        },
+        {
+          "grocery": "Grenadinensirup",
+          "amount": 17
+        },
+        {
+          "grocery": "Maracujasaft",
+          "amount": 17
+        },
+        {
+          "grocery": "Orangensaft",
+          "amount": 22
+        },
+        {
+          "grocery": "Zitronensaft",
+          "amount": 17
+        },
+        {
+          "grocery": "Ananassaft",
+          "amount": 33
+        }
+      ]
+    }
+  ]
+}
