@@ -5,7 +5,7 @@ import java.io.Serializable
 
 
 
-enum class Grocery(val label: String, val spot: Byte, val available: Boolean) : Serializable {
+enum class Grocery(val label: String, var spot: Byte, val available: Boolean) : Serializable {
     @SerializedName("Maracujasaft")
     PASSION_FRUIT_JUICE("Maracujasaft", 1, true),
 
@@ -62,6 +62,5 @@ enum class Grocery(val label: String, val spot: Byte, val available: Boolean) : 
 
     @SerializedName("Cola")
     COLA("Cola",0, true)
-
 
 }

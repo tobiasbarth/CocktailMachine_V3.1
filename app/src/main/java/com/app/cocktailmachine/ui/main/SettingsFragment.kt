@@ -1,8 +1,12 @@
 package com.app.cocktailmachine.ui.main
+import android.annotation.SuppressLint
 import android.app.AlertDialog
 import android.app.ProgressDialog
+import android.content.Context
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
@@ -13,8 +17,13 @@ import com.app.cocktailmachine.R
 import com.app.cocktailmachine.ui.Counter
 import kotlinx.android.synthetic.main.all_cocktails_fragment.*
 import kotlinx.android.synthetic.main.settings_activity.*
+import com.app.cocktailmachine.model.Grocery
 
 class SettingsFragment : MainBaseFragment() {
+
+    private lateinit var sharedPref: SharedPreferences
+    private lateinit var tableLayout: TableLayout
+    private lateinit var spinnerAmountPumps: Spinner
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -31,7 +40,52 @@ class SettingsFragment : MainBaseFragment() {
         val cocktailmachineButton: Button = root.findViewById(R.id.cocktailmachine_settings)
         val contentcocktailmachinesettings: LinearLayout = root.findViewById(R.id.cocktailmachine_settings_content)
         val ingredientsButton: Button = root.findViewById(R.id.Ingredients_settings)
+        spinnerAmountPumps = root.findViewById(R.id.spinner_amountpumps)
+        tableLayout = root.findViewById(R.id.pumptable)
+        sharedPref = context!!.getSharedPreferences("myprefs", Context.MODE_PRIVATE)
 
+        val valuesAmount = ArrayList<Int>()
+        val maxNrPumps = 16
+        for (num in 1..maxNrPumps){valuesAmount.add(num)}
+        val adapterPumpAmount = ArrayAdapter<Int>(context!!, android.R.layout.simple_list_item_1, valuesAmount)
+        spinnerAmountPumps.adapter = adapterPumpAmount
+
+        val savedPumpNrValue = sharedPref.getInt("selectedValue", 0)
+        if (savedPumpNrValue != 0){
+            val position = adapterPumpAmount.getPosition(savedPumpNrValue)
+            if (position != -1)
+            {
+                spinnerAmountPumps.setSelection(position)
+            }
+        }
+
+        spinnerAmountPumps.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
+            @SuppressLint("SetTextI18n")
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
+                with(sharedPref.edit())
+                {
+                    putInt("selectedValue", adapterPumpAmount.getItem(position)?:savedPumpNrValue)
+                    apply()
+                    updateTable()
+                }
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                TODO("Not yet implemented")
+            }
+        }
+
+//        updateTable()
+
+//        val spinner: Spinner = root.findViewById(R.id.spinner)
+//        val values = ArrayList<String>()
+//        for (grocery in Grocery.values()){ values.add(grocery.name)}
+//        spinner.adapter = ArrayAdapter<String>(context!!, android.R.layout.simple_list_item_1, values)
 
         ledButton.setOnClickListener{
             if (context != null) {
@@ -129,6 +183,24 @@ class SettingsFragment : MainBaseFragment() {
 
     var cleaning_process_state = 0
     lateinit var progress: ProgressDialog
+
+    fun updateTable(){
+        tableLayout.removeAllViews()
+        for (num in 1..sharedPref.getInt("selectedValue", 1)){
+            val tableRow = TableRow(context)
+            val textView = TextView(context)
+            val buttonView = CheckBox(context)
+            val spinnerView = Spinner(context)
+            val values = ArrayList<String>()
+            for (grocery in Grocery.values()){ values.add(grocery.name)}
+            spinnerView.adapter = ArrayAdapter<String>(context!!, android.R.layout.simple_list_item_1, values)
+            textView.text= "Pump $num"
+            tableRow.addView(textView)
+            tableRow.addView(buttonView)
+            tableRow.addView(spinnerView)
+            tableLayout.addView(tableRow)
+        }
+    }
 
 
     fun send_cleaning_data(duration: Int){
