@@ -10,8 +10,11 @@ import android.widget.ArrayAdapter
 import android.widget.ListView
 import com.app.cocktailmachine.R
 import com.app.cocktailmachine.model.Cocktail
+import com.app.cocktailmachine.model.Grocery
 import com.app.cocktailmachine.ui.CocktailAdapter
 import com.app.cocktailmachine.ui.SingleCocktailActivity
+import com.app.cocktailmachine.util.Utils
+import java.io.File
 
 
 class AllCocktailsFragment : MainBaseFragment() {
@@ -26,6 +29,9 @@ class AllCocktailsFragment : MainBaseFragment() {
         val cocktailListView: ListView = root.findViewById(R.id.cocktailslist)
 
         val cocktailList: List<Cocktail> = ACTIVITY.cocktails
+
+
+
         cocktailListView.adapter =
             context?.let { CocktailAdapter(it, R.layout.cocktail_row, cocktailList) }
         cocktailListView.setOnItemClickListener { _: AdapterView<*>, _, _, id ->

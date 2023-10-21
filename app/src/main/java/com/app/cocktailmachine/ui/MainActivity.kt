@@ -22,6 +22,8 @@ import com.app.cocktailmachine.Constants
 import com.app.cocktailmachine.R
 import com.app.cocktailmachine.connections.MqttConnection
 import com.app.cocktailmachine.model.Cocktail
+import com.app.cocktailmachine.model.Grocery
+import com.app.cocktailmachine.model.SharedPreferenceHelper
 import com.app.cocktailmachine.ui.main.HomeFragment
 import com.app.cocktailmachine.util.Utils
 import com.google.android.material.navigation.NavigationView
@@ -33,6 +35,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
     lateinit var cocktails: List<Cocktail>
     lateinit var mqttConnection: MqttConnection
+    lateinit var sharedPref: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,6 +43,9 @@ class MainActivity : AppCompatActivity() {
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
 
+
+        val sharedPreferences = SharedPreferenceHelper.getInstance(this)
+        sharedPreferences.updateGrocerySpots()
 
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true);
@@ -65,6 +71,8 @@ class MainActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
 
         cocktails = Utils.loadCocktailData(applicationContext).sortedBy { x -> x.name }
+
+
         Constants.bluetoothConnection.init(applicationContext)
         try {
             Constants.mqttConnection.init(applicationContext)
@@ -74,7 +82,10 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+
     }
+
+
 /*
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
