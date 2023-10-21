@@ -18,13 +18,6 @@ object Utils {
 
         val gson = Gson()
         val cocktails: JsonInput = gson.fromJson( readFileFromAssets(context, Constants.dataFile), JsonInput::class.java)
-        cocktails.cocktails.
-        for (cocktail in cocktails.cocktails){
-            for (ingredient in cocktail.ingredients)
-            {
-                //if ingredient.grocery.available
-            }
-        }
         return cocktails.cocktails
     }
 
