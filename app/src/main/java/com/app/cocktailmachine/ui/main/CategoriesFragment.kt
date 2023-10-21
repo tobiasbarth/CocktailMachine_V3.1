@@ -9,6 +9,7 @@ import android.widget.ListView
 import com.app.cocktailmachine.ui.FilteredCocktailsActivity
 import com.app.cocktailmachine.R
 import com.app.cocktailmachine.model.Category
+import com.app.cocktailmachine.model.Cocktail
 import java.io.Serializable
 
 
@@ -29,7 +30,12 @@ class CategoriesFragment : MainBaseFragment() {
 
             val intent = Intent(context, FilteredCocktailsActivity::class.java)
             val category: Category = categoryList[id.toInt()]
-            intent.putExtra("filtered_cocktails", ACTIVITY.cocktails.filter { x -> x.category == category } as Serializable)
+
+            val mutableCockailList: MutableList<Cocktail> = ACTIVITY.cocktails.toMutableList()
+            mutableCockailList.removeAll { cocktail ->cocktail.ingredients.any { !it.grocery.available } }
+            val cocktailList: List<Cocktail> = mutableCockailList.toList()
+
+            intent.putExtra("filtered_cocktails", cocktailList.filter { x -> x.category == category } as Serializable)
             intent.putExtra("filter", category.value)
             startActivity(intent)
             //Toast.makeText(context, cocktailArray[id.toInt()], Toast.LENGTH_LONG).show()

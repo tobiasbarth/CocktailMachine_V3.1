@@ -28,9 +28,10 @@ class AllCocktailsFragment : MainBaseFragment() {
 
         val cocktailListView: ListView = root.findViewById(R.id.cocktailslist)
 
-        val cocktailList: List<Cocktail> = ACTIVITY.cocktails
-
-
+        //val cocktailList: List<Cocktail> = ACTIVITY.cocktails
+        val mutableCockailList: MutableList<Cocktail> = ACTIVITY.cocktails.toMutableList()
+        mutableCockailList.removeAll { cocktail ->cocktail.ingredients.any { !it.grocery.available } }
+        val cocktailList: List<Cocktail> = mutableCockailList.toList()
 
         cocktailListView.adapter =
             context?.let { CocktailAdapter(it, R.layout.cocktail_row, cocktailList) }
